@@ -1,0 +1,24 @@
+applications:
+  - name: webapp2
+    path: /v2
+    image: 891612581930.dkr.ecr.us-east-1.amazonaws.com/capstoneapp2:latest
+    containerName: webapp-capstone
+    containerPort: 8080
+    servicePort: 80
+    replicas: 2
+  - name: webapp1
+    path: /
+    image: 891612581930.dkr.ecr.us-east-1.amazonaws.com/capstoneapp1:latest
+    containerName: webapp1-capstone
+    containerPort: 8080
+    servicePort: 80
+    replicas: 2
+
+ingress:
+  enabled: true
+  name: capstone-ingress
+  className: alb
+  annotations:
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/target-type: instance
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'

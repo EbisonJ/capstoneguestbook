@@ -1,0 +1,4 @@
+apiVersion: v2
+name: capstone-chart
+description: A Helm chart for deploying webapp1 and webapp2 with ingress
+version: 0.1.0
