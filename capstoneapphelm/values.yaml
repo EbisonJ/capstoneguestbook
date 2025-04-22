@@ -12,7 +12,7 @@ applications:
     containerName: webapp1-capstone
     containerPort: 8080
     servicePort: 80
-    replicas: 2
+    replicas: 1
 
 ingress:
   enabled: true
