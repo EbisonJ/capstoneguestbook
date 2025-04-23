@@ -8,7 +8,7 @@ applications:
     replicas: 1
   - name: webapp1
     path: /
-    image: 891612581930.dkr.ecr.us-east-1.amazonaws.com/capstoneapp1:3d50db6
+    image: 891612581930.dkr.ecr.us-east-1.amazonaws.com/capstoneapp1:f78b16a
     containerName: webapp1-capstone
     containerPort: 8080
     servicePort: 80
