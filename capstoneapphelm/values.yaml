@@ -1,7 +1,7 @@
 applications:
   - name: webapp2
     path: /v2
-    image: 891612581930.dkr.ecr.us-east-1.amazonaws.com/capstoneapp2:68be950
+    image: 891612581930.dkr.ecr.us-east-1.amazonaws.com/capstoneapp2:6d1571e
     containerName: webapp-capstone
     containerPort: 8080
     servicePort: 80
